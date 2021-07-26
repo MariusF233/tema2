@@ -1,5 +1,5 @@
 <?php
-
+//nu e finalizat
 public class Vehicle
 {
     public string $type;
