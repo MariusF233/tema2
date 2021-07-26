@@ -6,7 +6,7 @@ public class Vehicle
    public string $brand;
    public int $engineCapacity;
 
-    public function __construct(string $type,string $brand,string $engineCapacity)
+    public function __construct(string $type,string $brand,int $engineCapacity)
     {
     $this->type=$type;
     $this->brand=$brand;
@@ -29,7 +29,7 @@ public function getBrand()
 {
     return $this->brand;
 }
-public function setEngineCapacity(string $engineCapacity)
+public function setEngineCapacity(int $engineCapacity)
 {
     $this->engineCapacity=$engineCapacity;
 }
@@ -48,7 +48,7 @@ public class Car extends Vehicle
     
     public string $seatsNumber;
     
-    public function __construct(string $seatsNumber,string $type,string $brand,string $engineCapacity)
+    public function __construct(string $seatsNumber,string $type,string $brand,int $engineCapacity)
     {
     $this->seatsNumber=$seatsNumber;
     $this->type=$type;
@@ -72,7 +72,7 @@ public class Aircraft extends Vehicle
     public string $speed;
     public string $maxFlightDistance;
     
-    public function __construct(string $type,string $brand,string $engineCapacity,string $speed,string $maxFlightDistance)
+    public function __construct(string $type,string $brand,int $engineCapacity,string $speed,string $maxFlightDistance)
     {
     $this->type=$type;
     $this->brand=$brand;
@@ -103,7 +103,7 @@ public class Ship extends Vehicle
 {
     public string $motorisation;
     
-    public function __construct(string $motorisation,string $type,string $brand,string $engineCapacity)
+    public function __construct(string $motorisation,string $type,string $brand,int $engineCapacity)
     {
     $this->motorisation=$motorization;
     $this->type=$type;
@@ -124,7 +124,7 @@ public class OilTanker extends Ship
 {
     public string $tonnage;
     
-    public function __construct(string $tonnage,string $motorisation,string $type,string $brand,string $engineCapacity)
+    public function __construct(string $tonnage,string $motorisation,string $type,string $brand,int $engineCapacity)
     {
     $this->tonnage=$tonnage;
     $this->motorisation=$motorization;
@@ -147,7 +147,7 @@ public class cruiseShip extends Ship
 {
     public string $passengerNumber;
     
-    public function __construct(string $passengerNumber,string $motorisation,string $type,string $brand,string $engineCapacity)
+    public function __construct(string $passengerNumber,string $motorisation,string $type,string $brand,int $engineCapacity)
     {
     $this->passengerNumber=$passengerNumber;
     $this->motorisation=$motorization;
@@ -175,7 +175,7 @@ public class commercialPlane extends Aircraft
 {
     public string $luggageCapacity;
 
-    public function __construct(string $type,string $brand,string $engineCapacity,string $speed,string $maxFlightDistance,string $luggageCapacity)
+    public function __construct(string $type,string $brand,int $engineCapacity,string $speed,string $maxFlightDistance,string $luggageCapacity)
     {
     $this->type=$type;
     $this->brand=$brand;
@@ -199,7 +199,7 @@ public class FighterJet extends Aircraft
 {
     public string $weapons;
 
-    public function __construct(string $type,string $brand,string $engineCapacity,string $speed,string $maxFlightDistance,string $weapons)
+    public function __construct(string $type,string $brand,int $engineCapacity,string $speed,string $maxFlightDistance,string $weapons)
     {
     $this->type=$type;
     $this->brand=$brand;
@@ -226,7 +226,7 @@ public class Helicopter extends Aircraft
 {
     public string $altitude;
 
-    public function __construct(string $type,string $brand,string $engineCapacity,string $speed,string $maxFlightDistance,string $altitude)
+    public function __construct(string $type,string $brand,int $engineCapacity,string $speed,string $maxFlightDistance,string $altitude)
     {
     $this->type=$type;
     $this->brand=$brand;
@@ -254,7 +254,7 @@ final public class Coupe extends Car
 {
     public string $color;
     
-    public function __construct(string $seatsNumber,string $type,string $brand,string $engineCapacity,string $color)
+    public function __construct(string $seatsNumber,string $type,string $brand,int $engineCapacity,string $color)
     {
     $this->seatsNumber=$seatsNumber;
     $this->type=$type;
@@ -281,7 +281,7 @@ public class Hatchback extends Car
 {
     public string $trunkVolume;
     
-    public function __construct(string $seatsNumber,string $type,string $brand,string $engineCapacity,string $trunkVolume)
+    public function __construct(string $seatsNumber,string $type,string $brand,int $engineCapacity,string $trunkVolume)
     {
     $this->seatsNumber=$seatsNumber;
     $this->type=$type;
@@ -307,7 +307,7 @@ public class Suv extends Car
 {
     public string $wheelSize;
     
-    public function __construct(string $seatsNumber,string $type,string $brand,string $engineCapacity,string $wheelSize)
+    public function __construct(string $seatsNumber,string $type,string $brand,int $engineCapacity,string $wheelSize)
     {
     $this->seatsNumber=$seatsNumber;
     $this->type=$type;
